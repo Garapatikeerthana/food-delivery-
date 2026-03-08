@@ -1,0 +1,213 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>pizza</title>
+
+</head>
+<style>
+body{
+    background-color: rgb(106, 237, 209);
+}
+h2{
+    color:rgba(221, 36, 181, 0.955);
+}
+
+.box{
+    
+    text-align: left;
+    flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pizza-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+
+.add-to-cart {
+  background-color: #0c17db;
+  color: rgb(246, 246, 231);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-basis: 100%;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a{
+  float:left;
+  color: #d5d521;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+  background-color: #e1168d;
+  color:black;
+}
+
+/*.topnav a.active{
+  background-color: #d971a9;
+  color:white;
+}*/
+
+
+
+
+.footer {
+        padding: 0 20px;
+        z-index: 10;
+        background-color: #000;
+        min-height: 298px;
+        width: 100%;
+        height:50%;
+        color: #fff;
+        overflow: scroll;
+      }
+      .footer-content {
+        width: 100%;
+        display: flex;
+        background-color: #000000;
+        justify-content: space-around;
+        max-width: 1200px;
+        min-width: 1200px;
+        margin: 0 auto;
+        padding: 76px 0;
+        height: 50%;
+      }
+
+
+      .points {
+        color: #f38429;
+        font-size: 15px;
+        font-weight: 600;
+        width: 300px;
+        margin: 26px 0px 10px 15px;
+      }
+
+      .footer-li {
+        padding: 20px 10px 2px 0px;
+      }
+      
+      .footer-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .footer-li a {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration: none;
+      }
+
+      .footer-li a:hover {
+        font-weight: 600;
+      }
+      
+
+</style>
+<body>
+<div class="topnav">
+  <a class="active" href="ex.html">Home</a>
+  <a href="orders.html">Orders</a>
+  <a href="login.html">Login</a>
+</div>
+
+
+
+    <h2 align="center"><i><b><u>PIZZA</u></b></i></h2>
+
+    <div class="pizza-row">
+    <div class="box">
+    <h4 align="left"><b><u>Veg Pizza </u></b></h4>
+    <img src="./images/vegpizza.jpg" width="300px" height="300px" alt="veg pizza">
+
+
+    <h4>Chilli Paneer Sizzle</h4>
+    <p><i>Pizza topped with spiced paneer,</i><br> <i>a spicy schezwan sauce,</i> <br><i>juicy tomato, crunchy onion </i><br> <i>capsicum and cheesy dressing </i></p>
+
+    <a href="cart.php"><button class="add-to-cart" data-id="5">₹129 | Add to Cart</button></a>
+    </div><br>
+
+<div class="box">
+<h4><b><u>Non veg pizzas</u></b></h4>
+<img src="./images/pizzanon.jpg"  witdh="300px" height="300px" alt="non veg pizza">
+<h3>chicken Tikka pizza</h3>
+<p><i>It's the perfect blend<br> of mild Indian masalas and <br>
+    Italian herbs topped with cheese <br>makes this pizza exceptional.You can add fresh Coriander<br> leaves to give it a distinctive Desi twist.</i></p>
+    <br/>
+
+    <a href="cart.php"><button class="add-to-cart" data-id="5">₹189 | Add to Cart</button></a>
+</div>
+
+<div class="box">
+    <h4 align="right"><b><u>Starters</u></b></h4>
+    <img src="./images/starters.jpg" width="300px" height="300px" alt="Zingy pizza" >
+
+    <h3><b><i>Zingy pizza</i></b></h3>
+
+<p><i><b>Zingy Parcel, gralic bread&Chocolate fuges</b><br>
+    
+    of foods that are eaten before the main meal.<br> 
+    They are  delicate & bite-sized morsels of meats or vegetables 
+    </i></p>
+
+    <a href="cart.php"><button class="add-to-cart" data-id="5">₹99 | Add to Cart</button></a>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="points">COMPANY
+            <ul class="footer-ul">
+                <li class="footer-li"><a href="about.html" target="_blank">About us</a></li>
+                <li class="footer-li"><a href="careers.html" target="_blank">Careers</a></li>
+                <li class="footer-li"><a href="Teams.html" target="_blank">Team</a></li>
+              </ul>
+            </div>
+        <div class="points">CONTACT
+                <ul class="footer-ul">
+                  <li class="footer-li"><a href="help.html">Help & Support</a></li>
+                  <li class="footer-li"><a href="partner_ride" target="_blank">Partner with us</a></li>
+                 
+            </div>
+        <div class="points">LEGAL
+                <ul class="footer-ul">
+                  <li class="footer-li"><a href="t&c.html" target="_blank">Terms & Conditions</a></li>
+                  <li class="footer-li"><a href="cancellation.html" target="_blank">Refund & Cancellation</a></li>
+                  <li class="footer-li"><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                 </ul>
+            </div>
+        <!--<div class="points"><img
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+          height="54"/>
+        <img
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+          height="54"/>
+        </div>-->
+    </div>
+</footer>
+
+
+</body>
+
+</html>
